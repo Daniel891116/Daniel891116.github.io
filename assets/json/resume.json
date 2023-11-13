@@ -1,61 +1,74 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Yao-Ting, Huang",
+    "label": "",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "yaotinghuang89@gmail.com",
+    "phone": "(+886) 986-385-060",
+    "url": "https://Daniel891116.github.io/",
+    "summary": "As an Electrical Engineering undergraduate at National Taiwan University, I have amassed substantial research experience through my work at NTU-RobotLearning-Lab and the Advanced Control Laboratory. My innovative edge is showcased by a portfolio of side projects, including a prize-winning VR Quidditch simulator and the “Magic Hand” gesture-controlled presentation system. My practical problem-solving capabilities have been further honed through internships at CAVEDU, where I focused on AI education, and at Industrial Technology Research Institute(ITRI), working on autonomous vehicle systems.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Rm. 3, 4F., No. 247, Chongcing Rd., Banciao Dist.",
+      "postalCode": "220311",
+      "city": "New Taipei City",
+      "countryCode": "TW",
+      "region": ""
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Linkedin",
+        "username": "danielhyt",
+        "url": "https://www.linkedin.com/in/danielhyt/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Industrial Technology Research Institute(ITRI)",
+      "position": "Intern",
+      "url": "https://www.itri.org.tw/",
+      "startDate": "2023-08-14",
+      "endDate": "Now",
+      "summary": "Contributed to the self-driving automobile group by applying reinforcement learning for behavioral prediction of autonomous vehicles. And designed a virtual training environment for reinforcement learning framework based on real-world collected vehicle data.",
       "highlights": [
-        "Relativity"
+        "Reinforcement Learning",
+        "ROS",
+        "self-driving cars"
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
+      "institution": "National Taiwan University, Taipei, Taiwan",
+      "url": "https://www.ntu.edu.tw/",
+      "area": "Electrical Engineering",
+      "studyType": "B.S.",
+      "startDate": "2019-09-01",
+      "endDate": "2023-06-11",
+      "score": "3.71/4.3",
       "courses": [
-        "Theory of Relativity"
+        "Advanced Computer Vision",
+        "Robotics",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Computer Vision: from recognition to geometry*",
+        "Digital Visual Effects",
+        "Deep Learning for Computer Vision*",
+        "Algorithms",
+        "Computer Architecture",
+        "Introduction to Computer Networks",
+        "(*indicates graduate courses)"
       ]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Best Applications & 3rd prize of enterprise prize",
+      "date": "2023-05-07",
+      "awarder": "MakeNTU",
+      "url": "https://make.ntuee.org/",
+      "summary": ""
     }
   ],
   "certificates": [],
@@ -63,7 +76,7 @@
   "skills": [],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese",
       "fluency": "Native speaker"
     },
     {
