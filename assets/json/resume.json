@@ -49,7 +49,7 @@
       "score": "3.71/4.3",
       "courses": [
         "Advanced Computer Vision",
-        "Robotics",
+        "Robotics*",
         "Machine Learning",
         "Reinforcement Learning",
         "Computer Vision: from recognition to geometry*",
@@ -64,11 +64,25 @@
   ],
   "awards": [
     {
-      "title": "Best Applications & 3rd prize of enterprise prize",
+      "title": "Best Application & 3rd prize of enterprise prize",
       "date": "2023-05-07",
       "awarder": "MakeNTU",
       "url": "https://make.ntuee.org/",
-      "summary": ""
+      "summary": "'Magic Hand' project, which garnered the Best Application Award at the 2023 MakeNTU. This pioneering meeting assistant tool project allowed users to control presentations through natural arm movements."
+    },
+    {
+      "title": "Special prize of enterprise prize",
+      "date": "2020-10-25",
+      "awarder": "Meichu Hackathon",
+      "url": "https://2020.meichuhackathon.org/",
+      "summary": "Smart Backpack uses IR sensors and IMU technology to record contents inside the backpack and send notification if user have forgotten something."
+    },
+    {
+      "title": "3rd prize of Interactive Technology",
+      "date": "2021-12-17",
+      "awarder": "National Intelligence Innovation and Interdisciplinary Creation Contest",
+      "url": "https://niicc.cilab.csie.ncu.edu.tw/achievement/achieveresult/30344",
+      "summary": "'VR Quidditch' uses IMU and VR to provide users with first-person experience of playing Quidditch."
     }
   ],
   "certificates": [],
