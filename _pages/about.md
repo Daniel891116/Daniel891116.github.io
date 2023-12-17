@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   more_info:
-    <p><a href="mailto: yaotinghuang89@gmail.com">yaotinghuang89@gmail.com</a></p>
+    <a href="mailto: yaotinghuang89@gmail.com">yaotinghuang89@gmail.com</a>
     # <p>Rm. 3, 4F., No. 247, Chongcing Rd., Banciao Dist.</p>
     # <p>New Taipei City 220311 , Taiwan (R.O.C.)</p>
 
