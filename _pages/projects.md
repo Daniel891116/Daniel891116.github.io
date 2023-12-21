@@ -5,7 +5,7 @@ permalink: /projects/
 description: From dream to reality.
 nav: true
 nav_order: 2
-display_categories: [work, course, fun]
+display_categories: [competition, course, fun]
 horizontal: false
 ---
 
