@@ -2,68 +2,67 @@
 layout: page
 title: 3D Reconstruction from Road Marker Feature Points
 description: Final project of Computer Vision course
-img: assets/img/1.png
+img: assets/img/3D Reconstruction from Road Marker Feature Points/birdview.jpg
 importance: 1
 category: course
+giscus_comments: true
 ---
 
+### Abstraction
 This project performs 3D reconstruction from road marker feature points. Our pipeline consists of several steps, including segmentation, 3D reconstruction, merging views, and refinement.
 
+### Details & Links
+This is the [link](https://github.com/Daniel891116/computer_vision_final) to our project’s repository.
+We use Meta’s [SAM](https://segment-anything.com/) model to segment the road marker, remove the distracting street background for the segmentation step, and extract the feature points of those detected road markers. 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/3D Reconstruction from Road Marker Feature Points/feature_points.png" title="feature points" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/3D Reconstruction from Road Marker Feature Points/segmentation.png" title="road mark segmentation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Fig. 1. The road mark detection after applying SAM model. Left: before. Right: after.
+</div>
+Next, we reconstructed those feature points by projecting them to the ground of world coordinates, Shown in Fig. 1. I designed the algorithm for merging those overlapped projected feature points by comparing the IoU and the size of each overlapping road marker patch. Thus, we can distinguish whether the overlapping happened to two different road markers. 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3D Reconstruction from Road Marker Feature Points/birdview.jpg" title="birdview" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fig. 2. The birdview of projected feature points on real-world coordinates.
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/3D Reconstruction from Road Marker Feature Points/overlapped_road_mark.png" title="operlapped road mark" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3D Reconstruction from Road Marker Feature Points/road_mark.png" title="filtered road mark" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Fig. 3. Left: The same road mark projected by different camera. Right: The filtered road mark.
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+After getting the surrounded road marker feature points, we use the ICP to calculate the instant location by matching our result with the given feature points of the global environment. Finally, we refine the prediction with a causal filter based on the stability assumption of the car’s movement. For more details, the [link](https://drive.google.com/file/d/10w373dwWkj2aU79Rj4NbaYHNMd77JEEG/view?usp=drive_link) to the project is provided.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3D Reconstruction from Road Marker Feature Points/raw.png" title="raw trajectory" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3D Reconstruction from Road Marker Feature Points/raw_2.png" title="raw trajectory" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3D Reconstruction from Road Marker Feature Points/smoothed.png" title="smoothed trajectory" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3D Reconstruction from Road Marker Feature Points/smoothed_2.png" title="smoothed trajectory" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Fig. 4. Upper left: Raw trajectory of evaluation case 1. Upper Right: Raw trajectory of evaluation case 1.
+            Bottom left: Smoothed trajectory of evaluation case 1. Bottom Right: Smoothed trajectory of evaluation case 1.
 </div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
