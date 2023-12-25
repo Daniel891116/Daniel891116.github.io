@@ -3,16 +3,20 @@ layout: page
 title: Out-of-All-Things-One-and-Out-of-One-All-Things
 description: This project is inspired by the art work titled "Out of All Things One, and Out of One All Things" created by Petros Vrellis.
 img: assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things_preview.jpeg
-importance: 3
+importance: 2
 category: fun
 ---
+
+### Abstraction
+
+### Details & Links
 
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="https://youtu.be/C-98xdtjvOo" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
