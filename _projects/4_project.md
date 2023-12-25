@@ -9,14 +9,15 @@ category: fun
 
 ### Abstraction
 
+
 ### Details & Links
 
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="https://youtu.be/C-98xdtjvOo" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="https://www.youtube.com/embed/C-98xdtjvOo" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
