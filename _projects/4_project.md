@@ -2,60 +2,64 @@
 layout: page
 title: Out-of-All-Things-One-and-Out-of-One-All-Things
 description: This project is inspired by the art work titled "Out of All Things One, and Out of One All Things" created by Petros Vrellis.
-img: assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things_preview.jpeg
+img: assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/preview.jpeg
 importance: 2
 category: fun
+giscus_comments: true
 ---
 
 ### Abstraction
-
-
+Inspired by the art work by [Petros Vrellis](http://artof01.com/vrellis/), I create my version of "Out of All Things One, and Out of One All Things", which generates three transparent images layer that could be added up to reconstruct the desired image. In this project, I used deep learning network to optimize the pixel value of the three images. Feel free the check out the [repository](https://github.com/Daniel891116/Out-of-All-Things-One-and-Out-of-One-All-Things) of this project.
 ### Details & Links
-
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+This video shows the demonstration of the result of combining generated images.
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.html path="https://www.youtube.com/embed/C-98xdtjvOo" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Result demonstration.
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
+To generate those images, we have to pick three images as the guidance of image generation. It is recommanded to pick symmatric and complex images for the generation quality. For example, I pick the following three images to generate the transparent layers, shown in Fig. 1.
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/base1.jpg" title="image of guidance 1" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/base2.jpg" title="image of guidance 2" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/base3.jpg" title="image of guidance 3" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Fig. 1.Guidance for image generation.
 </div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
+Considering the physical optics and chromatics, we define the desired result $$X$$ and each layer of image $$I_i$$, and we get $$I_1\cdot I_2\cdot I_3 = X_\text{result}$$. To compute the loss, I use Structural Similarity Index measure(SSIM) loss and mean-square(MSE) loss to maximize the pixel difference and the visual difference.
+Apart from minimizing the reconstruction loss, the similarity of the generated image should be maintained. Thus, I apply only the SSIM loss to the difference between each guidance image and the corresponding layer. The generated layer is shown in Fig. 2.
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/layer1.jpg" title="image of layer 1" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/layer2.jpg" title="image of layer 2" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/layer3.jpg" title="image of layer 3" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-```
-{% endraw %}
+<div class="caption">
+    Fig. 2.Generated layers.
+</div>
+The desired image and result are shown is Fig. 3.
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/input.png" title="image of final result" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/result.jpg" title="image of final result" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fig. 3.Final result
+</div>
