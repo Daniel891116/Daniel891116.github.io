@@ -6,10 +6,10 @@ subtitle: The only way to do great work is to love what you do. - Steve Jobs
 
 profile:
   align: right
-  image: prof_pic.jpeg
+  image: prof_pic1.jpeg
   image_circular: false # crops the image to make it circular
   more_info:
-    <p>yaotinghuang89@gmail.com</p>
+    <p>yaotinghuang.us@gmail.com</p>
     # <p>Rm. 3, 4F., No. 247, Chongcing Rd., Banciao Dist.</p>
     # <p>New Taipei City 220311 , Taiwan (R.O.C.)</p>
 
@@ -19,4 +19,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-My name is Yao-Ting(Daniel) Huang, an aspiring Electrical Engineer from [National Taiwan University](https://www.ntu.edu.tw/), dedicated to merging the analytical rigors of engineering with the transformative potential of AI and Robotics. My academic path and research endeavors, under the tutelage of esteemed professors, have empowered me to navigate the complexities of Unsupervised Reinforcement Learning and the innovative domain of Computer Vision. The side projects displayed [here](https://daniel891116.github.io/projects/), including an award-winning VR Quidditch simulator and the intuitive "Magic Hand" presentation system, are testaments to my commitment to technological innovation. Dive into my [portfolio](https://drive.google.com/file/d/14Ee3PrhX5FhjEkCBLVrm-CCvMuVVkdah/view?usp=drive_link) to explore how my internships and collaborative projects are shaping my journey towards developing intelligent, adaptive robotic systems for the real world.
+My name is Yao-Ting(Daniel) Huang, an aspiring Electrical Engineer from [National Taiwan University](https://www.ntu.edu.tw/), dedicated to merging the analytical rigors of engineering with the transformative potential of AI and Robotics. My academic path and research endeavors, under the tutelage of esteemed professors, have empowered me to navigate the complexities of Unsupervised Reinforcement Learning and the innovative domain of Computer Vision. The side projects displayed [here](https://daniel891116.github.io/projects/), including an award-winning VR Quidditch simulator and the intuitive "Magic Hand" presentation system, are testaments to my commitment to technological innovation. Dive into my [portfolio](https://drive.google.com/file/d/14Ee3PrhX5FhjEkCBLVrm-CCvMuVVkdah/view?usp=drive_link) to explore how my internships and collaborative projects are shaping my journey towards developing intelligent, adaptive robotic systems for the real world. I would start my master degree at [Universoty of California, San Diego](https://www.ece.ucsd.edu/) majoring in Electrical Engineering (Intelligent Systems, Robotics and Control)

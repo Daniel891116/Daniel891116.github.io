@@ -3,8 +3,8 @@
     "name": "Yao-Ting, Huang",
     "label": "",
     "image": "",
-    "email": "yaotinghuang89@gmail.com",
-    "phone": "(+886) 986-385-060",
+    "email": "yaotinghuang.us@gmail.com",
+    "phone": "+1 (858)-220-4949",
     "url": "https://Daniel891116.github.io/",
     "summary": "As an Electrical Engineering undergraduate at National Taiwan University, I have amassed substantial research experience through my work at NTU-RobotLearning-Lab and the Advanced Control Laboratory. My innovative edge is showcased by a portfolio of side projects, including a prize-winning VR Quidditch simulator and the “Magic Hand” gesture-controlled presentation system. My practical problem-solving capabilities have been further honed through internships at CAVEDU, where I focused on AI education, and at Industrial Technology Research Institute(ITRI), working on autonomous vehicle systems.",
     "location": {
@@ -40,6 +40,20 @@
   "volunteer": [],
   "education": [
     {
+      "institution": "University of California, San Diego, CA",
+      "url": "https://ucsd.edu/",
+      "area": "Electrical Engineering",
+      "studyType": "M.S.",
+      "startDate": "2024-09-23",
+      "endDate": "present",
+      "score": "N/A",
+      "courses": [
+        "Statistical Learning I",
+        "Introduction to Autonomous Vehicles",
+        "Principles of Artificial Intelligence: Probabilistic Reasoning & Learning"
+      ]
+    },
+    {
       "institution": "National Taiwan University, Taipei, Taiwan",
       "url": "https://www.ntu.edu.tw/",
       "area": "Electrical Engineering",
@@ -71,18 +85,18 @@
       "summary": "'Magic Hand' project, which garnered the Best Application Award at the 2023 MakeNTU. This pioneering meeting assistant tool project allowed users to control presentations through natural arm movements."
     },
     {
-      "title": "Special prize of enterprise prize",
-      "date": "2020-10-25",
-      "awarder": "Meichu Hackathon",
-      "url": "https://2020.meichuhackathon.org/",
-      "summary": "Smart Backpack uses IR sensors and IMU technology to record contents inside the backpack and send notification if user have forgotten something."
-    },
-    {
       "title": "3rd prize of Interactive Technology",
       "date": "2021-12-17",
       "awarder": "National Intelligence Innovation and Interdisciplinary Creation Contest",
       "url": "https://niicc.cilab.csie.ncu.edu.tw/achievement/achieveresult/30344",
       "summary": "'VR Quidditch' uses IMU and VR to provide users with first-person experience of playing Quidditch."
+    },
+    {
+      "title": "Special prize of enterprise prize",
+      "date": "2020-10-25",
+      "awarder": "Meichu Hackathon",
+      "url": "https://2020.meichuhackathon.org/",
+      "summary": "Smart Backpack uses IR sensors and IMU technology to record contents inside the backpack and send notification if user have forgotten something."
     }
   ],
   "certificates": [],
