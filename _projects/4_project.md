@@ -39,13 +39,13 @@ Considering the physical optics and chromatics, we define the desired result $$X
 Apart from minimizing the reconstruction loss, the similarity of the generated image should be maintained. Thus, I apply only the SSIM loss to the difference between each guidance image and the corresponding layer. The generated layer is shown in Fig. 2.
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/layer1.jpg" title="image of layer 1" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/layer1.png" title="image of layer 1" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/layer2.jpg" title="image of layer 2" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/layer2.png" title="image of layer 2" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/layer3.jpg" title="image of layer 3" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/layer3.png" title="image of layer 3" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -57,7 +57,7 @@ The desired image and result are shown is Fig. 3.
         {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/input.png" title="image of final result" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/result.jpg" title="image of final result" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Out-of-All-Things-One-and-Out-of-One-All-Things/result.png" title="image of final result" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
