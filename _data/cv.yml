@@ -2,96 +2,72 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Yao-Ting (Daniel) Huang
+    - name: Email
+      value: yaotinghuang.us@gmail.com
+    - name: Profiles
+      value: <a href="https://github.com/Daniel891116" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/danielhyt" target="_blank">LinkedIn</a>
+    - name: CV
+      value: <a href="/assets/pdf/CV_Daniel.pdf" target="_blank">PDF</a>
     - name: Languages
-      value: English, German
+      value: English, Mandarin Chinese
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Electrical and Computer Engineering (Intelligent Systems, Robotics and Control)
+      institution: University of California, San Diego
+      year: 2024 - 2026 (expected)
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Focus on reinforcement learning, robot learning, and computer vision
+        - Projects in control, perception, and learning-based autonomy
+    - title: B.S. in Electrical Engineering
+      institution: National Taiwan University
+      year: 2020 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Coursework and projects in RL, CV, and robotics
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research/Engineering Projects (selected)
+      institution: Personal and academic projects
+      year: 2021 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+        - VR Quidditch simulator  award-winning interactive VR system (see <a href="/projects/" target="_blank">projects</a>)
+        - \"Magic Hand\" — presentation system — intuitive gesture-driven control interface
+        - Visual RL and control coursework projects at UC San Diego (ISRC)
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/Daniel891116" target="_blank">GitHub Portfolio</a>
+      year: ongoing
+      description: Coursework, experiments, and prototypes in RL, CV, and robotics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2023
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+        - VR project award (details on request)
 
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Reinforcement learning
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Representation learning and pretraining for RL
+        - Sample-efficient and long-horizon learning
+    - title: Robot learning
       items:
-        - Description 1.
-        - Description 2.
+        - Visual policy learning, perception-action loops, sim-to-real
+        - Learning-based control and decision making
+    - title: Computer vision
+      items:
+        - Multimodal perception for embodied agents
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Running, travel, photography
