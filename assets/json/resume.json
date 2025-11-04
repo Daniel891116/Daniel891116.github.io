@@ -3,17 +3,17 @@
     "name": "Yao-Ting, Huang",
     "label": "",
     "image": "",
-    "email": "yaotinghuang.us@gmail.com",
+    "email": "yah032@ucsd.edu",
     "phone": "+1 (858)-220-4949",
     "url": "https://Daniel891116.github.io/",
-    "summary": "As an Electrical Engineering undergraduate at National Taiwan University, I have amassed substantial research experience through my work at NTU-RobotLearning-Lab and the Advanced Control Laboratory. My innovative edge is showcased by a portfolio of side projects, including a prize-winning VR Quidditch simulator and the “Magic Hand” gesture-controlled presentation system. My practical problem-solving capabilities have been further honed through internships at CAVEDU, where I focused on AI education, and at Industrial Technology Research Institute(ITRI), working on autonomous vehicle systems.",
-    "location": {
-      "address": "Rm. 3, 4F., No. 247, Chongcing Rd., Banciao Dist.",
-      "postalCode": "220311",
-      "city": "New Taipei City",
-      "countryCode": "TW",
-      "region": ""
-    },
+    "summary": "Yao-Ting Huang is an M.S. student in ECE at University of California, San Diego working in the Advanced Robotics and Controls Lab under the advisement of Michael Yip. He develops complete visuotactile teleoperation systems—including firmware, communication protocols, simulation setup, force-feedback computation, and kinematic modelling—to generate high-fidelity demonstration data. His research spans visuotactile policy learning, multimodal sensor fusion (vision, force, tactile), and data-efficient imitation and reinforcement learning tailored to contact-rich, dexterous manipulation tasks in simulation and reality. Currently, two related works have been submitted to ICRA 2026 as he prepares to apply for a fall 2026 PhD focused on robotics, RL, and dexterous manipulation.",
+    // "location": {
+    //   "address": "Rm. 3, 4F., No. 247, Chongcing Rd., Banciao Dist.",
+    //   "postalCode": "220311",
+    //   "city": "New Taipei City",
+    //   "countryCode": "TW",
+    //   "region": ""
+    // },
     "profiles": [
       {
         "network": "Linkedin",
@@ -50,7 +50,13 @@
       "courses": [
         "Statistical Learning I",
         "Introduction to Autonomous Vehicles",
-        "Principles of Artificial Intelligence: Probabilistic Reasoning & Learning"
+        "Principles of Artificial Intelligence: Probabilistic Reasoning & Learning",
+        "Sensing & Estimation Robotics",
+        "Linear Algebra and Application",
+        "Planning & Learning Robotics",
+        "Dynamics System I: Linear Systems",
+        "Machine Learning for Robotics",
+        "Robot Manipulation and Control"
       ]
     },
     {
