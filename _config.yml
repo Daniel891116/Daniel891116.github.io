@@ -3,16 +3,16 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Yao-Ting(Daniel)
+first_name: Yao-Ting (Daniel)
 middle_name:
 last_name: Huang
 email: yaotinghuang89@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Prospective PhD student (Fall 2026). Research interests: reinforcement learning, robot learning,
-  computer vision, embodied AI, learning-based control.
+  dexterous manipulation.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: Reinforcement Learning, Robot Learning, Computer Vision, Embodied AI, UC San Diego, NTU, PhD 2026  # add your own keywords or leave empty
+keywords: Reinforcement Learning, Robot Learning, Dexterous Manipulation, UC San Diego, NTU, PhD 2026  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: icon/ucsd.png #🅳 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
