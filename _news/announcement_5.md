@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my SRIP(Summer Research Internship Program) in <a href="https://ucsdarclab.com/">ARCLab</a>
+Started SRIP(Summer Research Internship Program) in <a href="https://ucsdarclab.com/">ARCLab</a>

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I start my journey of pursuing ECE master degree at UCSD!.
+I started my journey of pursuing ECE master degree at UCSD!.

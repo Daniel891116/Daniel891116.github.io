@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Start intern in Industrial Technology Research Institute self-driving automobile group.
+Started intern in Industrial Technology Research Institute self-driving automobile group.

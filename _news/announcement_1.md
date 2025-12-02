@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduate from National Taiwan University of major in Electrical Engineering.
+Graduated from National Taiwan University, majoring in Electrical Engineering.
