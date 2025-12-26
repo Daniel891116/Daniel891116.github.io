@@ -6,7 +6,7 @@ subtitle: Prospective PhD student (Fall 2026) — Robotics, RL, Dexterous Manipu
 
 profile:
   align: right
-  image: prof_pic3.png
+  image: prof_pic4.png
   image_circular: false # crops the image to make it circular
   more_info:
     <p>yah032@ucsd.edu</p>
