@@ -5,10 +5,12 @@
       value: Yao-Ting (Daniel) Huang
     - name: Email
       value: yaotinghuang.us@gmail.com
+    - name: Phone
+      value: (+1) 858-220-4949
     - name: Profiles
       value: <a href="https://github.com/Daniel891116" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/danielhyt" target="_blank">LinkedIn</a>
     - name: CV
-      value: <a href="/assets/pdf/CV_Daniel.pdf" target="_blank">PDF</a>
+      value: <a href="/assets/pdf/CV_Yao-Ting_Huang.pdf" target="_blank">PDF</a>
     - name: Languages
       value: English, Mandarin Chinese
 
@@ -19,53 +21,103 @@
       institution: University of California, San Diego
       year: 2024 - 2026 (expected)
       description:
-        - Focus on reinforcement learning, robot learning, and computer vision
-        - Projects in control, perception, and learning-based autonomy
+        - "Overall GPA: 3.55/4.0"
+        - "Selected courses: Sensing & Estimation for Robotics, Planning & Learning for Robotics, Robot Manipulation and Control"
     - title: B.S. in Electrical Engineering
-      institution: National Taiwan University
-      year: 2020 - 2024
+      institution: National Taiwan University (NTU)
+      year: 2019 - 2023
       description:
-        - Coursework and projects in RL, CV, and robotics
+        - "Overall GPA: 3.71/4.3 (3.64/4.0); CS-related GPA: 4.0/4.3 (3.94/4.0)"
+        - "Teaching Assistant for Cornerstone EECS Design and Implementation (2023 Spring), instructor Prof. Ho-Lin Chen"
+        - "Selected graduate courses: Robotics, Deep Learning for Computer Vision; plus Machine Learning"
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Research/Engineering Projects (selected)
-      institution: Personal and academic projects
-      year: 2021 - present
+    - title: Graduate Research Student
+      institution: Advanced Robotics and Controls Lab (ARCLab), UC San Diego — advised by Prof. Michael C. Yip
+      year: Oct 2024 - present
       description:
-        - VR Quidditch simulator  award-winning interactive VR system (see <a href="/projects/" target="_blank">projects</a>)
-        - \"Magic Hand\" — presentation system — intuitive gesture-driven control interface
-        - Visual RL and control coursework projects at UC San Diego (ISRC)
+        - Built a visuotactile teleoperation and data pipeline connecting a haptic glove, Inspire Hand, and Franka arm with synchronized multimodal sensing and control across simulation and hardware.
+        - Trained tactile-conditioned imitation learning policies using LeRobot ACT and Diffusion Policy, improving sample efficiency and task success over vision-only baselines.
+        - Implemented closed-loop 2-D force-feedback teleoperation, improving force-tracking accuracy and reducing operator workload in contact-rich manipulation.
+        - Built a ROS 2-based motor torque-sensor calibration system for Inspire Hand and Wuji Hand using an ATI load cell for ground-truth measurement and Rerun for visualization and debugging.
 
-- title: Open Source Projects
+- title: Work Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/Daniel891116" target="_blank">GitHub Portfolio</a>
-      year: ongoing
-      description: Coursework, experiments, and prototypes in RL, CV, and robotics.
+    - title: Research Intern
+      institution: Industrial Technology Research Institute (ITRI), Hsinchu, Taiwan — Self-Driving Automobile Group
+      year: Aug 2023 - Dec 2023
+      description:
+        - Applied reinforcement learning to behavioral prediction for autonomous vehicles.
+        - Designed a virtual training environment for an RL framework based on real-world collected vehicle data.
 
-- title: Honors and Awards
+- title: Publications
   type: time_table
   contents:
-    - year: 2023
-      items: 
-        - VR project award (details on request)
+    - title: "The N2D Haptic Glove: A Multi-Finger Glove for 2D Directional Force Feedback for Contact Rich Manipulation"
+      year: 2025
+      description:
+        - "<b>Yao-Ting Huang</b>, Kaitlin Calimbahin, Jake Honma, Logan Li, Omar Hernandez, Michael Yip"
+        - Under review, IROS 2026
+    - title: In-Hand Manipulation of Articulated Tools with Dexterous Robot Hands with Sim-to-Real Transfer
+      year: 2025
+      description:
+        - "Soofiyan Atar, <b>Daniel Huang</b>, Florian Richter, Michael Yip"
+        - "arXiv:2509.23075; under review, IROS 2026"
+
+- title: Selected Projects
+  type: time_table
+  contents:
+    - title: Visual-Inertial SLAM (ECE 276A)
+      year: Jan 2025 - Mar 2025
+      description:
+        - Built a stereo pipeline (Shi-Tomasi / optical-flow / RANSAC) with EKF fusion; update time under 50 ms on recorded sequences.
+        - Tuned noise models and outlier rejection; achieved ~80% drift reduction vs IMU-only across 3 evaluation runs.
+        - Implemented robust keyframe logic to sustain tracking under fast motion.
+    - title: Motion Planning Algorithms (ECE 276B)
+      year: Apr 2025 - May 2025
+      description:
+        - Developed Weighted A* and KD-accelerated Connect-RRT planners for 3-D obstacle maps; achieved 26x NN-query speed-up with cKDTree.
+        - Across 7 maps, Weighted A* (w=2) ran 23% faster than optimal A* with only 3% longer paths.
+        - Comparative study of runtime, memory, and path quality across search-based and sampling-based methods.
+    - title: Magic Hand — Real-Time RGB-D Arm-Pose Guided Laser Pointer (2023 MakeNTU)
+      year: Apr 2023 - May 2023
+      description:
+        - Applied YOLOv5 on RGB-D frames from an Intel RealSense camera to localize arm joints and steer a laser pointer in real time.
+        - Optimized inference with optical-flow tracking to sustain 60+ FPS on a laptop CPU.
+        - Award-winning demo with low-latency pointing and smooth user interaction.
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Programming
+      items:
+        - Python, C/C++, C#, MATLAB, JavaScript, PyTorch
+    - title: Simulation
+      items:
+        - ROS 2, Isaac Lab, Isaac Sim, Mujoco, Unity, Blender
+    - title: Hardware
+      items:
+        - Jetson Nano, Raspberry Pi, STM32, Arduino, Teensy
+        - Mechanical design (CAD, Onshape)
+    - title: Robotic Systems
+      items:
+        - Franka Panda Arm, Unitree G1, Inspire Hand, Wuji Hand, UAVs
 
 - title: Research Interests
   type: nested_list
   contents:
-    - title: Reinforcement learning
-      items: 
-        - Representation learning and pretraining for RL
-        - Sample-efficient and long-horizon learning
-    - title: Robot learning
+    - title: Dexterous and contact-rich manipulation
       items:
-        - Visual policy learning, perception-action loops, sim-to-real
-        - Learning-based control and decision making
-    - title: Computer vision
+        - Visuotactile policy learning, imitation learning, sim-to-real transfer
+    - title: Multimodal perception for robotics
       items:
-        - Multimodal perception for embodied agents
+        - Fusion of vision, force, and tactile feedback for slip and contact-state estimation
+    - title: Teleoperation systems
+      items:
+        - End-to-end firmware, communication, force-feedback computation, and kinematics modeling
 
 - title: Other Interests
   type: list

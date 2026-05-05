@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Prospective PhD student (Fall 2026) — Robotics, RL, Dexterous Manipulation
+subtitle: Prospective PhD student (Fall 2026) — Robotics, Dexterous Manipulation
 
 profile:
   align: right
@@ -20,12 +20,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I’m Yao-Ting (Daniel) Huang, an ECE M.S. student at UC San Diego (ISRC) developing visuotactile robot policies for dexterous, contact-rich manipulation. Before joining UCSD, I completed my B.S. in Electrical Engineering at National Taiwan University, where I conducted research in the <a href="https://nturll.netlify.app/about">NTU Robot Learning Lab</a> under Prof. <a href="https://shaohua0116.github.io/">Shau-Hua Sun</a> and in the <a href="http://www.ntueeacl.com/26368260322804024687-news.html">Advanced Control Lab</a> under Prof. <a href="http://www.ntueeacl.com/25351235662594525480-advisor.html">Li-Chen Fu</a>. My undergraduate studies explored unsupervised reinforcement learning and vision-based UAV navigation, giving me early experience in algorithmic design, perception, and control for autonomous systems. These projects laid the foundation for my current work at UCSD, where I integrate tactile feedback, imitation learning, and sim-to-real transfer to advance robot dexterity.
+I’m Yao-Ting (Daniel) Huang, an ECE M.S. student at UC San Diego (ISRC) and a graduate researcher in the <a href="https://ucsdarclab.com/">ARCLab</a> with Prof. <a href="https://yip.eng.ucsd.edu/professor-michael-yip">Michael Yip</a>. I build visuotactile teleoperation and learning systems for dexterous, contact-rich manipulation, with a growing focus on force-centric cross-embodiment transfer. Before UCSD I earned my B.S. in EE at National Taiwan University, working on unsupervised RL and vision-based UAV navigation in the <a href="https://nturll.netlify.app/about">NTU Robot Learning Lab</a> (Prof. <a href="https://shaohua0116.github.io/">Shao-Hua Sun</a>) and the <a href="http://www.ntueeacl.com/26368260322804024687-news.html">Advanced Control Lab</a> (Prof. <a href="http://www.ntueeacl.com/25351235662594525480-advisor.html">Li-Chen Fu</a>).
 
-### Research focus
-- Visuotactile policy learning for dexterous manipulation under contact-rich dynamics
-- Multimodal fusion of vision, force and tactile feedback for robust slip and contact-state estimation, enabling data-efficient imitation learning and sim-to-real transfer for surgical and in-hand tasks
-- End-to-end teleoperation system development (firmware, communication, simulation setup, force-feedback computation, and kinematics modelling)
+### Research interests
+Visuotactile policy learning, multimodal sensor fusion, and force-centric cross-embodiment transfer for dexterous manipulation.
 
-### Recent work
-During my first year at UCSD, I joined the <a href="https://ucsdarclab.com/">ARCLab</a> advised by Prof. <a href="https://yip.eng.ucsd.edu/professor-michael-yip">Michael Yip</a> and worked closely with <a href="https://soofiyan.github.io/SoofiyanAtar/">Soofiyan Atar</a>. As a Graduate Researcher, I developed the N2D haptic glove teleoperation system, building its complete hardware-software pipeline—including firmware, communication protocols, Isaac Sim integration, force-feedback computation, and kinematic modeling. This system enables precise bidirectional teleoperation between a human operator and a dexterous robotic hand for contact-rich surgical and manipulation tasks. Apart from that, I collect visuotactile demonstrations to train imitation policies that generalize across simulation and real-world settings. Two related works are currently under review for ICRA 2026.
+### Current projects
+- **N2D Haptic Glove** *(lead author, under review at IROS 2026)* — A multi-finger wearable that renders directional fingertip forces for contact-rich teleoperation.
+- **Visuotactile imitation learning** — Tactile-conditioned policies for dexterous, contact-rich manipulation.
+- **In-hand articulated-tool manipulation** *(second author, under review at IROS 2026)* — Sim-to-real dexterous manipulation of articulated tools.
+- **Dexterous-hand torque-sensor calibration** — A calibration pipeline for force-aware control on multi-fingered hands.
