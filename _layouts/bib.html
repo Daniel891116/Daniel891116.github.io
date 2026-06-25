@@ -3,8 +3,9 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         {%- if site.enable_publication_thumbnails -%}
-        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+        <div class="col-sm-3 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
+          {%- if entry.preview_hover -%}<div class="preview-swap">{%- endif -%}
           {% if entry.preview contains '://' -%}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
           {%- else -%}
@@ -14,6 +15,15 @@
             class="preview z-depth-1 rounded"
             zoomable=false
             alt=entry.preview -%}
+          {%- endif -%}
+          {%- if entry.preview_hover -%}
+            {%- if entry.preview_hover contains '://' -%}
+              {%- assign hover_src = entry.preview_hover -%}
+            {%- else -%}
+              {%- assign hover_src = entry.preview_hover | prepend: '/assets/img/publication_preview/' | relative_url -%}
+            {%- endif -%}
+            <img class="preview-hover rounded" src="{{ hover_src }}" alt="{{ entry.preview_hover }}" loading="lazy">
+          </div>
           {%- endif -%}
         {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
