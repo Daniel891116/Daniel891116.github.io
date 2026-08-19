@@ -22,10 +22,10 @@ social: false  # includes social icons at the bottom of the page
 
 I’m Yao-Ting (Daniel) Huang, an ECE M.S. student at UC San Diego (ISRC) and a graduate researcher in the <a href="https://ucsdarclab.com/">ARCLab</a> advised by Prof. <a href="https://yip.eng.ucsd.edu/professor-michael-yip">Michael Yip</a>. 
 
-My research builds visuotactile systems that let robots learn and transfer contact-rich, force-aware manipulation skills across different dexterous hands. Before UCSD, I earned my B.S. in EE at National Taiwan University, working on unsupervised RL and vision-based UAV navigation in the <a href="https://nturll.netlify.app/about">NTU Robot Learning Lab</a> (Prof. <a href="https://shaohua0116.github.io/">Shao-Hua Sun</a>) and the <a href="http://www.ntueeacl.com/26368260322804024687-news.html">Advanced Control Lab</a> (Prof. <a href="http://www.ntueeacl.com/25351235662594525480-advisor.html">Li-Chen Fu</a>).
+I build the sensing hardware, teleoperation pipelines, and learned policies behind contact-rich dexterous manipulation — force-feedback gloves, tactile fingertips, and demonstration pipelines that capture what the hand actually feels. Before UCSD, I earned my B.S. in EE at National Taiwan University, working on unsupervised RL and vision-based UAV navigation in the <a href="https://nturll.netlify.app/about">NTU Robot Learning Lab</a> (Prof. <a href="https://shaohua0116.github.io/">Shao-Hua Sun</a>) and the <a href="http://www.ntueeacl.com/26368260322804024687-news.html">Advanced Control Lab</a> (Prof. <a href="http://www.ntueeacl.com/25351235662594525480-advisor.html">Li-Chen Fu</a>).
 
 ### Research interests
-Visuotactile learning, multimodal sensor representation, and cross-embodiment transfer for dexterous manipulation.
+How much of the physical interaction has to survive for a robot to learn fine manipulation? I work on contact as a first-class signal: haptic feedback that makes human demonstrations physically grounded, tactile sensing on dexterous hands, and representations that carry contact behavior — not just motion — across embodiments.
 
 ### Current projects
 - **<a href="https://ucsdarclab.github.io/n2d-glove/">N2D Haptic Glove</a>**
