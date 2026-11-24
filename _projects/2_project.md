@@ -5,7 +5,7 @@ description: Meeting assistance that turns intuitive gesture into mouse input.
 img: assets/img/Magic Hand/cover.png
 importance: 1
 category: competition
-giscus_comments: truec
+giscus_comments: true
 ---
 
 ### Abstraction

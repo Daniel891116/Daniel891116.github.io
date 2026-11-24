@@ -1,14 +1,16 @@
+# Source for the /cv/ page. Keep in sync with assets/pdf/CV_Yao-Ting_Huang.pdf.
+
 - title: General Information
   type: map
   contents:
     - name: Full Name
       value: Yao-Ting (Daniel) Huang
     - name: Email
-      value: yaotinghuang.us@gmail.com
+      value: <a href="mailto:yaotinghuang89@gmail.com">yaotinghuang89@gmail.com</a>
     - name: Phone
       value: (+1) 858-220-4949
     - name: Profiles
-      value: <a href="https://github.com/Daniel891116" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/danielhyt" target="_blank">LinkedIn</a>
+      value: <a href="https://github.com/Daniel891116" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/danielhyt" target="_blank">LinkedIn</a>, <a href="https://scholar.google.com/citations?user=1OE5uDAAAAAJ" target="_blank">Google Scholar</a>
     - name: CV
       value: <a href="/assets/pdf/CV_Yao-Ting_Huang.pdf" target="_blank">PDF</a>
     - name: Languages
@@ -19,29 +21,58 @@
   contents:
     - title: M.S. in Electrical and Computer Engineering (Intelligent Systems, Robotics and Control)
       institution: University of California, San Diego
-      year: 2024 - 2026 (expected)
+      year: Sep 2024 - Jun 2026
       description:
-        - "Overall GPA: 3.55/4.0"
         - "Selected courses: Sensing & Estimation for Robotics, Planning & Learning for Robotics, Robot Manipulation and Control"
     - title: B.S. in Electrical Engineering
       institution: National Taiwan University (NTU)
-      year: 2019 - 2023
+      year: Sep 2019 - Aug 2023
       description:
-        - "Overall GPA: 3.71/4.3 (3.64/4.0); CS-related GPA: 4.0/4.3 (3.94/4.0)"
-        - "Teaching Assistant for Cornerstone EECS Design and Implementation (2023 Spring), instructor Prof. Ho-Lin Chen"
-        - "Selected graduate courses: Robotics, Deep Learning for Computer Vision; plus Machine Learning"
+        - "Overall GPA: 3.71/4.3 (3.64/4.0); last-60 GPA: 3.82/4.3 (3.75/4.0)"
+        - "Teaching Assistant for Cornerstone EECS Design and Implementation (Spring 2023), instructor Prof. Ho-Lin Chen"
+        - "Selected courses: Robotics, Machine Learning, Deep Learning for Computer Vision"
+
+- title: Publications
+  type: time_table
+  contents:
+    - title: "In-Hand Manipulation of Articulated Tools with Dexterous Robot Hands with Sim-to-Real Transfer"
+      year: 2026
+      description:
+        - "Soofiyan Atar, <b>Daniel Huang</b>, Florian Richter, Michael Yip"
+        - "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026. arXiv:2509.23075"
+    - title: "The N2D Haptic Glove: A Multi-Finger Glove for 2D Directional Force Feedback for Contact Rich Manipulation"
+      year: 2026
+      description:
+        - "<b>Yao-Ting Huang</b>, Jake Honma, Omar Hernandez, Logan Li, Kaitlin Calimbahin, Bryce Hackel, Michael C. Yip"
+        - "arXiv:2606.14083"
+    - title: "Transferring Contact, Not Just Motion: Compliant Grasping Across Dexterous Hands"
+      year: 2026
+      description:
+        - "Soofiyan Atar*, <b>Yao-Ting Huang*</b>, Michael Yip (*equal contribution)"
+        - "arXiv:2606.15516"
 
 - title: Research Experience
   type: time_table
   contents:
-    - title: Graduate Research Student
+    - title: Graduate Research Assistant
       institution: Advanced Robotics and Controls Lab (ARCLab), UC San Diego — advised by Prof. Michael C. Yip
       year: Oct 2024 - present
       description:
-        - Built a visuotactile teleoperation and data pipeline connecting a haptic glove, Inspire Hand, and Franka arm with synchronized multimodal sensing and control across simulation and hardware.
-        - Trained tactile-conditioned imitation learning policies using LeRobot ACT and Diffusion Policy, improving sample efficiency and task success over vision-only baselines.
-        - Implemented closed-loop 2-D force-feedback teleoperation, improving force-tracking accuracy and reducing operator workload in contact-rich manipulation.
-        - Built a ROS 2-based motor torque-sensor calibration system for Inspire Hand and Wuji Hand using an ATI load cell for ground-truth measurement and Rerun for visualization and debugging.
+        - "N2D Haptic Glove: designed closed-loop 2-D fingertip force-feedback control and the full teleoperation pipeline for a multi-finger glove driving an Inspire Hand on a Franka arm; in a user study, 2-D feedback achieved the lowest median force-tracking error vs. 1-D and no-force-feedback conditions."
+        - "In-hand manipulation of articulated tools (sim-to-real): designed an augmented tactile fingertip structure for the Inspire Hand and built the experimental pipeline quantifying tool steadiness during dexterous in-hand manipulation."
+        - "Compliant grasping across dexterous hands: built the joint-torque calibration and teleoperated demonstration-collection pipelines and a unified hand representation with force rendering across embodiments (Inspire, Wuji); raised average task success from 0.44 to 0.71 over a DiT-flow baseline."
+    - title: Undergraduate Research Student
+      institution: Robot Learning Lab, National Taiwan University — advised by Prof. Shao-Hua Sun
+      year: Jul 2022 - Dec 2023
+      description:
+        - Investigated unsupervised reinforcement learning problems based on SPIRL.
+        - Designed experiments showing that learning efficiency slows by 1M steps in the absence of certain skills.
+        - Implemented a choice mechanism that lets the high-level agent choose between exploration and exploitation.
+    - title: Undergraduate Research Student
+      institution: Advanced Control Lab, National Taiwan University — advised by Prof. Li-Chen Fu
+      year: Feb 2022 - Jun 2022
+      description:
+        - Developed a 2-D visual odometry system using optical flow for indoor UAV odometry in GPS-denied environments.
 
 - title: Work Experience
   type: time_table
@@ -53,19 +84,10 @@
         - Applied reinforcement learning to behavioral prediction for autonomous vehicles.
         - Designed a virtual training environment for an RL framework based on real-world collected vehicle data.
 
-- title: Publications
-  type: time_table
+- title: Academic Service
+  type: list
   contents:
-    - title: "The N2D Haptic Glove: A Multi-Finger Glove for 2D Directional Force Feedback for Contact Rich Manipulation"
-      year: 2025
-      description:
-        - "<b>Yao-Ting Huang</b>, Kaitlin Calimbahin, Jake Honma, Logan Li, Omar Hernandez, Michael Yip"
-        - Under review, IROS 2026
-    - title: In-Hand Manipulation of Articulated Tools with Dexterous Robot Hands with Sim-to-Real Transfer
-      year: 2025
-      description:
-        - "Soofiyan Atar, <b>Daniel Huang</b>, Florian Richter, Michael Yip"
-        - "arXiv:2509.23075; under review, IROS 2026"
+    - "Reviewer: IEEE ICRA 2027, IEEE/RSJ IROS 2026"
 
 - title: Selected Projects
   type: time_table
@@ -75,51 +97,47 @@
       description:
         - Built a stereo pipeline (Shi-Tomasi / optical-flow / RANSAC) with EKF fusion; update time under 50 ms on recorded sequences.
         - Tuned noise models and outlier rejection; achieved ~80% drift reduction vs IMU-only across 3 evaluation runs.
-        - Implemented robust keyframe logic to sustain tracking under fast motion.
     - title: Motion Planning Algorithms (ECE 276B)
       year: Apr 2025 - May 2025
       description:
         - Developed Weighted A* and KD-accelerated Connect-RRT planners for 3-D obstacle maps; achieved 26x NN-query speed-up with cKDTree.
         - Across 7 maps, Weighted A* (w=2) ran 23% faster than optimal A* with only 3% longer paths.
-        - Comparative study of runtime, memory, and path quality across search-based and sampling-based methods.
     - title: Magic Hand — Real-Time RGB-D Arm-Pose Guided Laser Pointer (2023 MakeNTU)
       year: Apr 2023 - May 2023
       description:
         - Applied YOLOv5 on RGB-D frames from an Intel RealSense camera to localize arm joints and steer a laser pointer in real time.
-        - Optimized inference with optical-flow tracking to sustain 60+ FPS on a laptop CPU.
-        - Award-winning demo with low-latency pointing and smooth user interaction.
+        - Best Application Award and 3rd prize of Enterprise prize at MakeNTU 2023.
+    - title: Sushiro-Bot (CSIE5047 Robotics)
+      year: Oct 2022 - Dec 2022
+      description:
+        - Developed a 7-axis robot arm that makes nigiri sushi in 80 s and tekka-maki in 5 min, using computer vision to evaluate sushi quality and choose gripping points for soft ingredients.
+
+- title: Awards
+  type: time_table
+  contents:
+    - title: 3rd prize of Enterprise prize & Best Application Award, MakeNTU
+      year: 2023
+    - title: 3rd prize of Interactive Technology, NIICC
+      year: 2021
+    - title: 4th prize of Enterprise prize, MakeNTU
+      year: 2021
+    - title: Special prize of Enterprise prize, Meichu Hackathon
+      year: 2020
+    - title: Special prize of Enterprise award, MakeNTU
+      year: 2020
 
 - title: Skills
   type: nested_list
   contents:
-    - title: Programming
+    - title: Robot Learning
       items:
-        - Python, C/C++, C#, MATLAB, JavaScript, PyTorch
-    - title: Simulation
+        - PyTorch, LeRobot, ACT, Diffusion Policy, imitation learning, demonstration dataset design, Isaac Lab, MuJoCo
+    - title: Dexterous Manipulation
       items:
-        - ROS 2, Isaac Lab, Isaac Sim, Mujoco, Unity, Blender
-    - title: Hardware
+        - Inspire Hand, Wuji Hand, sim-to-real, teleoperation and hand retargeting, tactile sensing and calibration, force control
+    - title: Embedded & Mechanical
       items:
-        - Jetson Nano, Raspberry Pi, STM32, Arduino, Teensy
-        - Mechanical design (CAD, Onshape)
-    - title: Robotic Systems
+        - Teensy, Jetson, sensor characterization, 3D CAD (Fusion, Onshape), compliant mechanism design
+    - title: Software & Systems
       items:
-        - Franka Panda Arm, Unitree G1, Inspire Hand, Wuji Hand, UAVs
-
-- title: Research Interests
-  type: nested_list
-  contents:
-    - title: Dexterous and contact-rich manipulation
-      items:
-        - Visuotactile policy learning, imitation learning, sim-to-real transfer
-    - title: Multimodal perception for robotics
-      items:
-        - Fusion of vision, force, and tactile feedback for slip and contact-state estimation
-    - title: Teleoperation systems
-      items:
-        - End-to-end firmware, communication, force-feedback computation, and kinematics modeling
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Running, travel, photography
+        - Python, C/C++, ROS 2, Linux, Docker, multi-sensor time synchronization
