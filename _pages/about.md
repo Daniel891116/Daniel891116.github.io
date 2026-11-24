@@ -29,3 +29,7 @@ How much of the physical interaction has to survive for a robot to learn fine ma
 - **<a href="https://ucsdarclab.github.io/n2d-glove/">N2D Haptic Glove</a>**
 - **<a href="https://sites.google.com/view/in-hand-manipulation-of-artic/home">In-hand articulated-tool manipulation</a>**
 - **<a href="https://transferring-contact-not-just-motion.github.io/">Compliant Grasping Across Dexterous Hands</a>**
+
+### Service and teaching
+- Reviewer: IEEE ICRA 2027, IEEE/RSJ IROS 2026
+- Teaching Assistant: Cornerstone EECS Design and Implementation, National Taiwan University (Spring 2023)

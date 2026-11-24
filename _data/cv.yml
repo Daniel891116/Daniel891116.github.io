@@ -27,7 +27,6 @@
       year: Sep 2019 - Aug 2023
       description:
         - "Overall GPA: 3.71/4.3 (3.64/4.0); last-60 GPA: 3.82/4.3 (3.75/4.0)"
-        - "Teaching Assistant for Cornerstone EECS Design and Implementation (Spring 2023), instructor Prof. Ho-Lin Chen"
         - "Selected courses: Robotics, Machine Learning, Deep Learning for Computer Vision"
 
 - title: Publications
@@ -82,10 +81,12 @@
         - Applied reinforcement learning to behavioral prediction for autonomous vehicles.
         - Designed a virtual training environment for an RL framework based on real-world collected vehicle data.
 
-- title: Academic Service
+- title: Service and Teaching
   type: list
   contents:
-    - "Reviewer: IEEE ICRA 2027, IEEE/RSJ IROS 2026"
+    - "Reviewer: IEEE International Conference on Robotics and Automation (ICRA) 2027"
+    - "Reviewer: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026"
+    - "Teaching Assistant: Cornerstone EECS Design and Implementation, National Taiwan University (Spring 2023), instructor Prof. Ho-Lin Chen"
 
 - title: Selected Projects
   type: time_table
