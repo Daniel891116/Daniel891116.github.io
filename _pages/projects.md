@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: From dream to reality.
+description: Research projects, followed by earlier competition, course, and side projects.
 nav: true
 nav_order: 2
-display_categories: [competition, course, fun]
+display_categories: [research, competition, course, fun]
 horizontal: false
 ---
 

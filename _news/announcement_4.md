@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I started my journey of pursuing ECE master degree at UC San Diego!.
+Started my M.S. in Electrical and Computer Engineering at UC San Diego.

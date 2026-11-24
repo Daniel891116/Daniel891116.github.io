@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Yao-Ting (Daniel)
 middle_name:
 last_name: Huang
-email: yaotinghuang89@gmail.com
+email: yah032@ucsd.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Robotics researcher (M.S. ECE, UC San Diego) applying for PhD programs starting Fall 2027.
   Research interests: contact-rich dexterous manipulation, haptics and tactile sensing, robot learning.
